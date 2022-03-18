@@ -29,15 +29,18 @@ The analysis is divided into two code files:
 ## Results
 **Bubble Chart of Average Fares vs Total Number of Rides And Drivers by City**
 ![Bubble Chart of Average Fares vs Total Number of Rides And Drivers by City](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig1.png)
+
 In the chart above, there is a negative trend between the average fare and the total number of rides and drivers, when the data is categorized based on city types. By definition, there is an inherent disparity in population densities of each city type with urban cities having the highest, rural cities having the lowest and suburban cities resting in between urban and rural values (Source: [The Urban and Rural Classifications](https://www2.census.gov/geo/pdfs/reference/GARM/Ch12GARM.pdf)). This inerent disparity becomes appearant in the bubble chart and explains the negative trend between average fares and total rides as well as average fares and total drivers. Population size itself impacts the supply and demand of the ride share service since higher populations imply higher supply and demand for transportation services such as rideshare apps. This effect is compounded by the geographical spread of the population (population density) as greater spread (lower density) implies longer commute times and consequently, higher fares.  
 
 ### Summary of Key Metrics and Statistical Analysis 
 ![Summary Data Frame](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/summary_df.png)
+
 Within the data analyzed per city type, there were: 66 urban cities, 36 suburban cities and 18 rural cities. This is approximately a decrease of 2x from each city type ranked (urban, suburban and rural). The average fares per ride and per driver increase as population density decreases because there is less demand for the service. This deters drivers from engaging with rides to-and-from rural cities, which drives up the price of the service as for individuals who need the serivce. Despite the high average fares in rural areas, drivers are less likely to commit to rides due to the required time investment in conducting the ride as well as sourcing the next ride. This impedes the ability of the driver to generate a large volume of daily rides in order to gain more profit. 
 
 #### Total Rides per City Type - Percentages and Statistical Summary 
 ![Total Rides by City Type](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig6.png)
 ![Ride Count Data](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig2.png)
+
 Overall the spread of the rides between each city type is as expected. The differnces become more pronounced when comparing urban and rural cities. The differences between the urban and suburban cities is comparable. This reflects the disparity within the demand of the ride share service between city types and can be explained by population density. The whiskers and boxes become bigger as population size increases from rural to urban cities suggesting more variations between each city within urban cities in contrast to rural cities. Without the population data it is difficult to accurately elucidate the factors beind the disparities observed. 
 
 - Urban cities have the highest ride count 1,625, which represents 68.4% of the gross total rides. The median is 24 rides per city with the outlier West Angela City having 39 rides. the lowest ride count for urban cities is 12. 
@@ -49,6 +52,7 @@ Overall the spread of the rides between each city type is as expected. The diffe
 #### Total Drivers per City Type - Percentages and Statistical Summary 
 ![Total Drivers by City Type](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig7.png)
 ![Driver Count Data](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig4.png)
+
 Overall the differences between the driver counts is more dramatic than the ride counts. Especially when comparing the urban cities with the rest. This analysis reflects the disparity in the supply of the ride share service between each city type. Based on the box and whiskers of each city type, urban cities have a wide range of driver counts but rural and even suburban cities have similar driver counts between each city. When comparing the total number of rides and drivers, there is a general decreasing trend based on city type for both metrics, with urban cities being the highest and rural cities being the lowest. However, the total number of driver exceeds the total number of rides in urban cities suggesting that there is more supply than demand on average in urban cities alone.   
 
 - Urban cities have the most drivers at 2,405, which represents 80.9% of the gross total drivers. The median is 36 drivers per city with a minimum of 3 drivers per city and the maximum of 73 drivers per city. When contrasted with the less dramatic spread of the ride counts in urban cities, there seems to be a disconnect. Despite the availability of demand, there seems to be some cities in which the supply can't match the demand. This could be an indicator of possible competing ride share services that inhibit PyBer's business viability within the cities. 
@@ -60,6 +64,7 @@ Overall the differences between the driver counts is more dramatic than the ride
 #### Total and Average Fares by City Type- Percentages and Statistical Summary 
 ![Total Fares by City Type](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig5.png)
 ![Ride Fare Data](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/Fig3.png)
+
 The differences between the each city types is not as dramatic as the ride and driver metrics. The spread remains relatively the same. Based on the box and whisker plot and in contrast to the ride and driver metrics, there is an increasing trend of average ride fares based on the city type starting from urban to rural cities. This is an inverse of the trend observed in total fares as urban cities have a higher total fare than the rural cities. 
 
 - Urban cities have an average fare per ride of $24.53 and with a similar median value. The maximum average fare is $44.97 per ride and the minimum fare is $4.05 per ride. The urban fares account for 62.7% of the total fares. These percentages mirror that of the ride count of the cities. 
@@ -70,6 +75,7 @@ The differences between the each city types is not as dramatic as the ride and d
 
 #### Total Fares per City Type by Weeks from (Jan. 6th, 2019 to Apr. 28th, 2019)
 ![Gross Total Fares per City Type](https://github.com/Fabalin/PyBer_Analysis/blob/main/analysis/PyBer_fare_summary.png)
+
 The line graph reveals that the fares for each city type from the beginning of the year to April stable overall with some spikes for all city types. There is a peak around the week of February 24th, 2019 indiciating an increase in demand across all city types. This could potentially coincide with a federal holiday (Presidents' Day) weekend where people are more likely to drink and celebrate. 
 
 - Urban cities have an increasing trend from the beginning of the year to Feb. 24th followed by 2 alternating spikes on the month of March that levels out after a final increase. Despite the spikes in March, urban cities contribute the most towards total fares and is the safest business model for drivers as there is plentiful demand. The lower average fare rate and the lower average fare per driver can be compensated by the volume of rides in urban cities, resulting in higher driver count in urban cities as profit is more likely. The effect of lower fares is also compounded by higher competition between drivers and possibly between ride share services as well. 
